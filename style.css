@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background com imagem */
+body {
+  font-family: Arial, sans-serif;
+  background: url('tech-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header fixo com position */
+header {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
+
+/* Main com padding para compensar header fixo e footer fixo */
+main {
+  padding: 120px 20px 60px;
+  min-height: calc(100vh - 180px);
+}
+
+/* Footer fixo */
+footer {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Seção de contato com form styling */
+section.contato {
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+form .form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form .form-group input,
+form .form-group select,
+form .form-group textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+form .form-group button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+form .form-group button:hover {
+  background-color: #0056b3;
+}
